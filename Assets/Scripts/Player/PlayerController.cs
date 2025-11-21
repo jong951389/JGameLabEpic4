@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
 
         if (isAir)
         {
-            //   약간의 관성이 남도록 Lerp 사용
+            //   약간의 관성이 남도록 Lerp 사용 
             float newX = Mathf.Lerp(rb.linearVelocity.x, targetX, airControl);
             rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
         }

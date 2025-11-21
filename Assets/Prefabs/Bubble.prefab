@@ -103,6 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubbleDetroyTime: 5
+  explosionRadius: 2
+  explosionForce: 20
 --- !u!58 &-874027518670957353
 CircleCollider2D:
   m_ObjectHideFlags: 0

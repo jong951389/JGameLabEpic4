@@ -51,7 +51,7 @@ public class PlayerShoot : MonoBehaviour
         // 게이지 회복
         if (bubbleCurrentGuage < bubbleMaxGuage)
         {
-            bubbleCurrentGuage += 7 * Time.deltaTime;
+            bubbleCurrentGuage += 10 * Time.deltaTime;
         }
 
         // 4단계 스냅 게이지
@@ -79,7 +79,6 @@ public class PlayerShoot : MonoBehaviour
         // 플레이어 → 마우스 방향
         Vector2 dir = (mousePos - transform.position).normalized;
 
-        // 🔥 플레이어 주변 원의 테두리에서 생성
         Vector3 spawnPos = transform.position + (Vector3)(dir * bubbleSpawnRadius);
 
         // 버블 생성
