@@ -7,6 +7,7 @@ public class CheckPoint : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             DeathCheck.Instance.checkPoint = this.transform;
+            GetComponent<SpriteRenderer>().color = Color.green;
         }
     }
 }

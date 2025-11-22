@@ -7,6 +7,8 @@ TagManager:
   - Bubble
   - Monster
   - Niddle
+  - Ground
+  - BubbleGun
   layers:
   - Default
   - TransparentFX
